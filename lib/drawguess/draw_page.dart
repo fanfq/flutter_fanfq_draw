@@ -77,6 +77,8 @@ class _DrawPageState extends State<DrawPage> {
                         ],
                       ),
                     ),
+
+                    ///size chose
                     Padding(
                       padding: EdgeInsets.only(left: 10, right: 80, bottom: 20),
                       child: Wrap(
@@ -93,6 +95,8 @@ class _DrawPageState extends State<DrawPage> {
                         ],
                       ),
                     ),
+
+                    ///color chose
                     Padding(
                       padding: EdgeInsets.only(left: 10, right: 80, bottom: 20),
                       child: Wrap(
@@ -134,6 +138,8 @@ class _DrawPageState extends State<DrawPage> {
         ));
   }
 
+
+  ///size chose
   InkWell buildInkWell(DrawProvider drawProvider, double size) {
     return InkWell(
       onTap: () {
