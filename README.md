@@ -2,4 +2,5 @@
 
 flutter canvas 涂鸦
 
-![](https://cdn.fanfq.com/picgo/20220524222322.jpeg?imageslim)
+
+<img src="images/preview.jpeg" width="480" height="800" alt="图片描述文字"/>
