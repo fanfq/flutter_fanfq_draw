@@ -71,40 +71,19 @@ class _ImageGesture extends State {
   Widget build(BuildContext context){
 
     print('build');
-    //RenderBox imageRenderBox = context.findRenderObject() as RenderBox ;
-    //print('context.size:${imageRenderBox!.size}');
-    //print('_getRelativePosition${_getRelativePosition()}');
 
-    //Offset centerPoint = Offset(referenceBox.size.width / 2,referenceBox.size.height / 2 );
-    //viewWidth = referenceBox.size.width -100;//裁切宽度
-    //viewHeight = referenceBox.size.height - 100;//裁切高度
-
-    //RenderBox imageRenderBox = _pictureGlobalKey.currentContext?.findRenderObject() as RenderBox ;
-    //RenderBox contentRenderBox = _contentGlobalKey.currentContext?.findRenderObject() as RenderBox ;
-    //print('contentRenderBox width:${contentRenderBox.size.width},height:${contentRenderBox.size.height}');
-
-    //_pictureDefOffset = centerPoint;
-
-    //
-    //_pictureDefOffset = referenceBox.localToGlobal(Offset(referenceBox.size.width / 2,referenceBox.size.height / 2 ));
-
-    //ui.Image img = Image.asset('images/preview.jpeg',key: _pictureGlobalKey,);
-
-
-
-    //print('context.size:${context.size}');
 
     return Scaffold(
         appBar: AppBar(
           title: Text("Picture Crop"),
           actions: <Widget>[
-          IconButton(
-          icon: Icon(Icons.crop),
-          onPressed: () {
-          //print("object");
-          saveClipperInfo();
-          },
-          ),
+            IconButton(
+              icon: Icon(Icons.crop),
+              onPressed: () {
+                //print("object");
+                saveClipperInfo();
+              },
+            ),
           ],
         ),
 

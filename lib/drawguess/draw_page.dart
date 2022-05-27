@@ -52,10 +52,13 @@ class _DrawPageState extends State<DrawPage> {
                     Expanded(
                       child: Stack(
                         children: [
+
                           Container(
                             color: Colors.white,
                           ),
+
                           Text(drawProvider.points.length.toString()),
+
                           GestureDetector(
                             //手势探测器，一个特殊的widget，想要给一个widge添加手势，直接用这货包裹起来
                             onPanUpdate: (DragUpdateDetails details) {
@@ -71,6 +74,7 @@ class _DrawPageState extends State<DrawPage> {
                               drawProvider.sendDrawNull();
                             },
                           ),
+
                           CustomPaint(
                               painter:
                                   SignaturePainter(drawProvider.pointsList)),
